@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/images/logo-energy-pilates.png" alt="Energy Pilates" height="40">
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <!-- MENU -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="post.html">Bài viết</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Video</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sự kiện</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+            Tài khoản
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- NGÔN NGỮ -->
+      <div class="d-flex">
+        <a href="#" class="nav-link px-2">Tiếng Việt</a>
+        <a href="#" class="nav-link px-2">Tiếng Anh</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-md-8">
+
+            <!-- POST ITEM -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/300/200" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h5>Bài viết số 1</h5>
+                    <span class="badge bg-primary mb-2">Công nghệ</span>
+                    <p>Mô tả ngắn nội dung bài viết giống hình mẫu trong đề.</p>
+                    <a href="post-detail.html" class="btn btn-sm btn-outline-primary">Read more</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/301/200" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h5>Bài viết số 2</h5>
+                    <span class="badge bg-success mb-2">Tin tức</span>
+                    <p>Mô tả ngắn nội dung bài viết giống hình mẫu trong đề.</p>
+                    <a href="post-detail.html" class="btn btn-sm btn-outline-primary">Read more</a>
+                </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link">Previous</a></li>
+                    <li class="page-item active"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="col-md-4">
+
+            <!-- SEARCH -->
+            <div class="card mb-3">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="card mb-3">
+                <div class="card-header">Categories</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Web Design</li>
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">Bootstrap</li>
+                </ul>
+            </div>
+
+            <!-- RECENT POST -->
+            <div class="card">
+                <div class="card-header">Recent Posts</div>
+                <div class="card-body">
+                    <p class="mb-1">Post 1</p>
+                    <p class="mb-1">Post 2</p>
+                    <p class="mb-0">Post 3</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

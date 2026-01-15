@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Lab 3 - Carousel</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR (Lab 1 dùng lại) ===== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="/images/logo-energy-pilates.png" alt="Energy Pilates" height="40">
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <!-- MENU -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="post.html">Bài viết</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Video</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sự kiện</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+            Tài khoản
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- NGÔN NGỮ -->
+      <div class="d-flex">
+        <a href="#" class="nav-link px-2">Tiếng Việt</a>
+        <a href="#" class="nav-link px-2">Tiếng Anh</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ===== CAROUSEL ===== -->
+<div class="container mt-4">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- DẤU CHẤM -->
+    <div class="carousel-indicators">
+      <button data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- HÌNH ẢNH -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/banner1.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/banner2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/banner3.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- NÚT PREV / NEXT -->
+    <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
